@@ -11,6 +11,10 @@
 		ADA8281F253C670100EFF382 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8281E253C670100EFF382 /* ContentView.swift */; };
 		ADA82821253C670100EFF382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA82820253C670100EFF382 /* Assets.xcassets */; };
 		ADA82824253C670100EFF382 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA82823253C670100EFF382 /* Preview Assets.xcassets */; };
+		ADA8282D253C673500EFF382 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8282C253C673500EFF382 /* HealthStore.swift */; };
+		ADA82832253C6A3F00EFF382 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA82831253C6A3F00EFF382 /* HealthKit.framework */; };
+		ADA82836253C717000EFF382 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA82835253C717000EFF382 /* Step.swift */; };
+		ADA8283B253C7FD400EFF382 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8283A253C7FD400EFF382 /* GraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,11 @@
 		ADA82820253C670100EFF382 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADA82823253C670100EFF382 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADA82825253C670200EFF382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA8282C253C673500EFF382 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		ADA8282F253C6A3F00EFF382 /* JustWalkingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JustWalkingApp.entitlements; sourceTree = "<group>"; };
+		ADA82831253C6A3F00EFF382 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		ADA82835253C717000EFF382 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		ADA8283A253C7FD400EFF382 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA82832253C6A3F00EFF382 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +48,7 @@
 			children = (
 				ADA8281B253C670100EFF382 /* JustWalkingApp */,
 				ADA8281A253C670100EFF382 /* Products */,
+				ADA82830253C6A3F00EFF382 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +63,11 @@
 		ADA8281B253C670100EFF382 /* JustWalkingApp */ = {
 			isa = PBXGroup;
 			children = (
+				ADA82839253C7FBC00EFF382 /* Views */,
+				ADA82834253C716300EFF382 /* Models */,
+				ADA8282F253C6A3F00EFF382 /* JustWalkingApp.entitlements */,
 				ADA8281C253C670100EFF382 /* JustWalkingAppApp.swift */,
+				ADA8282C253C673500EFF382 /* HealthStore.swift */,
 				ADA8281E253C670100EFF382 /* ContentView.swift */,
 				ADA82820253C670100EFF382 /* Assets.xcassets */,
 				ADA82825253C670200EFF382 /* Info.plist */,
@@ -67,6 +82,30 @@
 				ADA82823253C670100EFF382 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ADA82830253C6A3F00EFF382 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADA82831253C6A3F00EFF382 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADA82834253C716300EFF382 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ADA82835253C717000EFF382 /* Step.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ADA82839253C7FBC00EFF382 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADA8283A253C7FD400EFF382 /* GraphView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA8283B253C7FD400EFF382 /* GraphView.swift in Sources */,
 				ADA8281F253C670100EFF382 /* ContentView.swift in Sources */,
+				ADA82836253C717000EFF382 /* Step.swift in Sources */,
+				ADA8282D253C673500EFF382 /* HealthStore.swift in Sources */,
 				ADA8281D253C670100EFF382 /* JustWalkingAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JustWalkingApp/JustWalkingApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"JustWalkingApp/Preview Content\"";
 				DEVELOPMENT_TEAM = R7JPULMD8P;
@@ -289,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JustWalkingApp/JustWalkingApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"JustWalkingApp/Preview Content\"";
 				DEVELOPMENT_TEAM = R7JPULMD8P;
